@@ -1,0 +1,42 @@
+﻿<Window x:Class="Lab1_RIK.SecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Підтвердження" Height="300" Width="400">
+
+    <Grid Margin="20">
+        <StackPanel>
+
+            <TextBlock Text="Перевірте введені дані:"
+               FontSize="16"
+               Margin="0,0,0,10"/>
+
+            <TextBlock x:Name="NameTextBlock"
+               Margin="0,5"/>
+
+            <TextBlock x:Name="EmailTextBlock"
+               Margin="0,5"/>
+
+            <!-- НОВЕ ПОЛЕ ДЛЯ ВІДГУКУ -->
+            <TextBlock Text="Ваш відгук:"
+               Margin="0,15,0,5"/>
+
+            <TextBox x:Name="FeedbackTextBox"
+             Height="80"
+             TextWrapping="Wrap"
+             AcceptsReturn="True"
+             VerticalScrollBarVisibility="Auto"/>
+
+            <Button Content="Зберегти у файл"
+            Margin="0,20,0,0"
+            Height="30"
+            Click="SaveButton_Click"/>
+
+            <Button Content="Назад"
+            Margin="0,10,0,0"
+            Height="30"
+            Click="BackButton_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
